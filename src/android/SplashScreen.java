@@ -214,6 +214,8 @@ public class SplashScreen extends CordovaPlugin {
                 //add spinner
                 ProgressBar progressBar = new ProgressBar(context, null, android.R.attr.progressBarStyleSmall);
                 root.addView(progressBar);
+                int topOffset = preferences.getInteger("AndroidSplashScreenSpinnerTopOffset", 0);
+                progressBar.setPadding(0, topOffset, 0, 0);
 
                 splashDialog.setContentView(root);
                 splashDialog.setCancelable(false);
