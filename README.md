@@ -112,6 +112,10 @@ Note also that this value used to be seconds, and not milliseconds, so values le
 
         <preference name="ShowSplashScreenSpinner" value="false"/>
 
+- `iOSSplashScreenSpinnerTopOffset` (int, defaults to `0`): Set the top offset splash-screen spinner.
+
+        <preference name="iOSSplashScreenSpinnerTopOffset" value="100"/>
+
 ## Methods
 
 - splashscreen.show
